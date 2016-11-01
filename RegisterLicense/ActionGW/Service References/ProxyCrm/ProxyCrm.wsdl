@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://Norbit.Crm.Action.Proxy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ProxyCrm" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="wsProtectedProxyCrm_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://Norbit.Crm.Action.Proxy" location="http://83.69.214.126:5559/ProxyCrm.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="wsProtectedProxyCrm" type="i0:IProtectedProxyCrm">
+    <wsp:PolicyReference URI="#wsProtectedProxyCrm_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SayHelloProtectedProxy">
+      <soap12:operation soapAction="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/SayHelloProtectedProxy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmailRegistered">
+      <soap12:operation soapAction="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/CheckEmailRegistered" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmail">
+      <soap12:operation soapAction="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/CheckEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile">
+      <soap12:operation soapAction="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/UpdateProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile2">
+      <soap12:operation soapAction="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/UpdateProfile2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribeOrders">
+      <soap12:operation soapAction="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/GetSubscribeOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixIdCampaignFiltered">
+      <soap12:operation soapAction="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/GetOrdersByBitrixIdCampaignFiltered" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="basicPublicCrmProxy" type="i0:IPublicCrmProxy">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ChangeParticipation">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ChangeParticipation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSeminarParticipants">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSeminarParticipants" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSeminarEvents">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAllSeminarEvents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterParticipantEx">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipantEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParticipant">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterParticipant">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipationAffixingBarcode">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ParticipationAffixingBarcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipationAffixingUserIdandEventId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ParticipationAffixingUserIdandEventId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventMcfer">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetEventMcfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInformationRegistrationUkd">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInformationRegistrationUkd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainProductInfo">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobtitlesWithProducts">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetJobtitlesWithProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreasWithProducts">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAreasWithProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainProducts">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScopePickList">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetScopePickList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerSizePickList">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCustomerSizePickList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivePartners">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetActivePartners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainProductsForId2">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProductsForId2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListIncident">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetListIncident" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateIncident">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateIncident" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentTypes">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentTypeById">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentTypeById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizations">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrganizations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationsList">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrganizationsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrganization">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrJoinOrganization">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrJoinOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrJoinOrganizationOnGuid">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrJoinOrganizationOnGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizationByInn">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindOrganizationByInn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLegalForms">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetLegalForms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLegalFormById">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetLegalFormById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationUsers">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRelationUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBill">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetBill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPhysicalPersonOnEmail">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SearchPhysicalPersonOnEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhysicalPersonOnId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPhysicalPersonOnId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhysicalPersonOnBitrixId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPhysicalPersonOnBitrixId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhysicalPerson">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhysicalPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBonusPointsOnContactId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetBonusPointsOnContactId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixIdEx">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixIdEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixIdCampaignFilteredEx">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixIdCampaignFilteredEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSendingInvoicesByOrderId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSendingInvoicesByOrderId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderContentsByOrderId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrderContentsByOrderId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPromoCode">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CheckPromoCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetListOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderingInformation">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrderingInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BlockOrder">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/BlockOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreliminaryEstimate">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/PreliminaryEstimate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrders">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentAndPayOrder">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentAndPayOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentAndPayOrder2">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentAndPayOrder2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentOrder">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVerificationActs">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateVerificationActs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceEx">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoiceEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FormulationPrintDocuments">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FormulationPrintDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderExtendedData">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateOrderExtendedData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatedOrderStatusRecurrent">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdatedOrderStatusRecurrent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaleOrderOnOrderNumber">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSaleOrderOnOrderNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataInvoiceForPayment">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDataInvoiceForPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataCustomerAndOrderOnOrderNumber">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDataCustomerAndOrderOnOrderNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCashFlowOnOrdersNumber">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnOrdersNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCashFlowOnPaymentId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnPaymentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCashFlowOnSalesOrderId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnSalesOrderId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceSystemInfo">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceSystemInfoByPriceList">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfoByPriceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceSystemInfoByProduct">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfoByProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPointsByBitrixId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserPointsByBitrixId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserStateSendingByBitrixId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserStateSendingByBitrixId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhone">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPhone">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ModifyPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateAddress">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrUpdateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAddress">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ModifyAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddresses">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAddresses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationAddress">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRelationAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAddress">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRussiaGuid">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRussiaGuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindUserByEmail">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindUserBitrixId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserBitrixId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindUserById">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateContactAndJoinWithOrganization">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateContactAndJoinWithOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefusalInteraction">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RefusalInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefusalInteractionEmail">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RefusalInteractionEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhysicalContactList">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhysicalContactList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterParticipantList">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipantList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhoneContact">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhoneContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileWithPostfix">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithPostfix" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileWithDate">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileWithStartDate">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithStartDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceDocumentInText">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoiceDocumentInText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoicePartnerDocumentInText">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoicePartnerDocumentInText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintVerificationActInExcel">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPrintVerificationActInExcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintVerificationActInExcelInText">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPrintVerificationActInExcelInText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDmBillForHtml">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDmBillForHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncident">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncident" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateIncidentEx">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateIncidentEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncidentRating">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateIncidentRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidationContactFace">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ValidationContactFace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventsFromAptoID2">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/EventsFromAptoID2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CouldUserAskQuestion">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CouldUserAskQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotifyQuestionChange">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/NotifyQuestionChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CouldUserAskQuestion_wQuestionStatus">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CouldUserAskQuestion_wQuestionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentExcellentComment">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentExcellentComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomersStatusByInnKpp">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCustomersStatusByInnKpp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCustomer">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SearchCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveOrUpdateSupport">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SaveOrUpdateSupport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptionsData">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptionStatusByBitrixId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionStatusByBitrixId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptionProductLibraryByBitrixId">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionProductLibraryByBitrixId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrmExport">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CrmExport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceListForPartners">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceListForPartners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrmImportOrphanCarts">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CrmImportOrphanCarts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShopOffers">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetShopOffers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEvent">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterLicense">
+      <soap:operation soapAction="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProxyCrm">
+    <wsdl:port name="wsProtectedProxyCrm" binding="tns:wsProtectedProxyCrm">
+      <soap12:address location="http://83.69.214.126:5559/ProxyCrm.svc/ProtectedProxyCrm" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://83.69.214.126:5559/ProxyCrm.svc/ProtectedProxyCrm</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="basicPublicCrmProxy" binding="tns:basicPublicCrmProxy">
+      <soap:address location="http://83.69.214.126:5559/ProxyCrm.svc/basicPublicCrmProxy" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

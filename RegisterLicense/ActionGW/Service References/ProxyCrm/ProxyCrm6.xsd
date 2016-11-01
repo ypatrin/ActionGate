@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="OrganizationData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Inn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Kpp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrganizationData" nillable="true" type="tns:OrganizationData" />
+  <xs:complexType name="Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="IntId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IsError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Result" nillable="true" type="tns:Result" />
+  <xs:complexType name="OrderData">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BillsIdentifiers" nillable="true" type="q1:ArrayOfguid" />
+      <xs:element minOccurs="0" name="CurrentPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepositPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SumInText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SumP" type="xs:int" />
+      <xs:element minOccurs="0" name="SumR" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SumRInText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderData" nillable="true" type="tns:OrderData" />
+  <xs:complexType name="OrderDataEx">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OrderData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdvertBlock" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Contents" nillable="true" type="tns:ArrayOfOrderContentDataEx" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderDataEx" nillable="true" type="tns:OrderDataEx" />
+  <xs:complexType name="ArrayOfOrderContentDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderContentDataEx" nillable="true" type="tns:OrderContentDataEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderContentDataEx" nillable="true" type="tns:ArrayOfOrderContentDataEx" />
+  <xs:complexType name="OrderContentDataEx">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OrderContentData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BuyerName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderContentDataEx" nillable="true" type="tns:OrderContentDataEx" />
+  <xs:complexType name="OrderContentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ItemsCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProductExtName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Sum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SumInText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderContentData" nillable="true" type="tns:OrderContentData" />
+</xs:schema>

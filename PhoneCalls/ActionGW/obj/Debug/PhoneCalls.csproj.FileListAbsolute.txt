@@ -1,0 +1,12 @@
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\bin\Debug\PhoneCalls.exe.config
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Debug\PhoneCalls.csproj.ResolveComReference.cache
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Debug\PhoneCalls.exe
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Debug\PhoneCalls.pdb
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\bin\Debug\PhoneCalls.exe
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\bin\Debug\PhoneCalls.pdb
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\bin\Debug\MySql.Data.dll
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\bin\Debug\MySql.Data.xml
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Debug\action_gw.Form1.resources
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Debug\action_gw.Properties.Resources.resources
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Debug\PhoneCalls.csproj.GenerateResource.Cache
+D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Debug\PhoneCalls.csprojResolveAssemblyReference.cache

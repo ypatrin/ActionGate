@@ -1,0 +1,12 @@
+d:\документы\visual studio 2015\Projects\n4\n4\bin\Release\Action GateWay.exe.config
+d:\документы\visual studio 2015\Projects\n4\n4\bin\Release\Action GateWay.exe
+d:\документы\visual studio 2015\Projects\n4\n4\bin\Release\Action GateWay.pdb
+d:\документы\visual studio 2015\Projects\n4\n4\obj\Release\action_gw.Form1.resources
+d:\документы\visual studio 2015\Projects\n4\n4\obj\Release\action_gw.Properties.Resources.resources
+d:\документы\visual studio 2015\Projects\n4\n4\obj\Release\n4.csproj.GenerateResource.Cache
+d:\документы\visual studio 2015\Projects\n4\n4\obj\Release\Action GateWay.exe
+d:\документы\visual studio 2015\Projects\n4\n4\obj\Release\Action GateWay.pdb
+d:\документы\visual studio 2015\Projects\n4\n4\obj\Release\n4.csprojResolveAssemblyReference.cache
+D:\Data\C#\Projects\Action Gate\n4\bin\Release\Action GateWay.exe.config
+D:\Data\C#\Projects\Action Gate\n4\obj\Release\Action GateWay.exe
+D:\Data\C#\Projects\Action Gate\n4\obj\Release\Action GateWay.pdb

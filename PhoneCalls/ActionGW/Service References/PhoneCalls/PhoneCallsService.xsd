@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://83.69.214.126:7779/Services/PhoneCallsService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PublicServiceForPartners.DataContracts" />
+  <xs:import schemaLocation="http://83.69.214.126:7779/Services/PhoneCallsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="GetPhoneCalls">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateStart" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhoneCallsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PublicServiceForPartners.DataContracts" minOccurs="0" name="GetPhoneCallsResult" nillable="true" type="q1:ArrayOfGetPhoneCallsData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionStatusesForCampaignId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="companyId" type="q2:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActionStatusesForCampaignIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PublicServiceForPartners.DataContracts" minOccurs="0" name="GetActionStatusesForCampaignIdResult" nillable="true" type="q3:ArrayOfActionStatusesData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompletePhoneCall">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="phoneCallId" type="q4:guid" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="actionStatusId" type="q5:guid" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="declineReasonStatusId" nillable="true" type="q6:guid" />
+        <xs:element minOccurs="0" name="nextCallTime" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompletePhoneCallResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PublicServiceForPartners.DataContracts" minOccurs="0" name="CompletePhoneCallResult" nillable="true" type="q7:RequestError" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

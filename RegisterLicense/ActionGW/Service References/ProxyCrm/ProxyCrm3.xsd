@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Norbit.Crm.Action.Proxy" elementFormDefault="qualified" targetNamespace="http://Norbit.Crm.Action.Proxy" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd2" namespace="http://Norbit.Crm.Action.DataDefinition" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.Proxy.Models" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" />
+  <xs:element name="SayHelloProtectedProxy">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SayHelloProtectedProxyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SayHelloProtectedProxyResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmailRegistered">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmailRegisteredResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckEmailRegisteredResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckEmailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="iduser" nillable="true" type="q1:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProfileResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProfile2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="user" nillable="true" type="q2:UserData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateProfile2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateProfile2Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubscribeOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="productIds" nillable="true" type="q3:ArrayOfguid" />
+        <xs:element minOccurs="0" name="startdate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="enddate" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubscribeOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetSubscribeOrdersResult" nillable="true" type="q4:ArrayOfSubscribeOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixIdCampaignFiltered">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="filter" nillable="true" type="q5:FilterData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixIdCampaignFilteredResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrdersByBitrixIdCampaignFilteredResult" nillable="true" type="q6:ArrayOfOrderData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeParticipation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="participantId" type="q7:guid" />
+        <xs:element minOccurs="1" name="isParticipated" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeParticipationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangeParticipationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSeminarParticipants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="eventId" type="q8:guid" />
+        <xs:element minOccurs="1" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSeminarParticipantsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetSeminarParticipantsResult" nillable="true" type="q9:ArrayOfSeminarEventParticipantData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSeminarEvents">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSeminarEventsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetAllSeminarEventsResult" nillable="true" type="q10:ArrayOfSeminarEventData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterParticipantEx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="middleName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="companyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="position" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="barCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="eventId" type="xs:int" />
+        <xs:element minOccurs="1" name="participateNow" type="xs:boolean" />
+        <xs:element minOccurs="1" name="textParam1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="textParam2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="dateParam" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterParticipantExResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="RegisterParticipantExResult" type="q11:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateParticipant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="participantId" type="q12:guid" />
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="middleName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="companyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="position" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="barCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="eventId" type="xs:int" />
+        <xs:element minOccurs="1" name="participateNow" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateParticipantResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterParticipant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="middleName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="companyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="position" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="barCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="seminarEventId" type="xs:int" />
+        <xs:element minOccurs="1" name="textParam1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="textParam2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="dateParam" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterParticipantResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="RegisterParticipantResult" type="q13:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipationAffixingBarcode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="barcode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipationAffixingBarcodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ParticipationAffixingBarcodeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipationAffixingUserIdandEventId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="eventId" type="xs:int" />
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="userId" type="q14:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipationAffixingUserIdandEventIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ParticipationAffixingUserIdandEventIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventMcfer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="eventType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="eventStartDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="eventEndDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="eventId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="1" name="amountRecords" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEventMcferResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetEventMcferResult" nillable="true" type="q15:ArrayOfEventMcferData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInformationRegistrationUkd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="startDate" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInformationRegistrationUkdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetInformationRegistrationUkdResult" nillable="true" type="q16:ArrayOfGetInformationRegistrationUkdData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMainProductInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="productNumber" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMainProductInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetMainProductInfoResult" nillable="true" type="q17:MainProductData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJobtitlesWithProducts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJobtitlesWithProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetJobtitlesWithProductsResult" nillable="true" type="q18:ArrayOfJobtitleWithProductsData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAreasWithProducts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAreasWithProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetAreasWithProductsResult" nillable="true" type="q19:ArrayOfAreaMainProductWithProductsData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMainProducts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMainProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetMainProductsResult" nillable="true" type="q20:ArrayOfMainProductWithProductsData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScopePickList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScopePickListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetScopePickListResult" nillable="true" type="q21:ArrayOfArrayOfKeyValueOfguidstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerSizePickList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerSizePickListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCustomerSizePickListResult" nillable="true" type="q22:ArrayOfArrayOfKeyValueOfintstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivePartners">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivePartnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetActivePartnersResult" nillable="true" type="q23:ArrayOfPartnerData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMainProductsForId2">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMainProductsForId2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetMainProductsForId2Result" nillable="true" type="q24:ArrayOfMainProductWithProductsForIdData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListIncident">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q25="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filtres" nillable="true" type="q25:IncidentFilter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListIncidentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetListIncidentResult" nillable="true" type="q26:ArrayOfIncident" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateIncident">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="incident" nillable="true" type="q27:Incident" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateIncidentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateIncidentResult" type="q28:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentTypes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetIncidentTypesResult" nillable="true" type="q29:ArrayOfIncidentType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentTypeById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q30:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentTypeByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetIncidentTypeByIdResult" nillable="true" type="q31:IncidentType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q32="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filtres" nillable="true" type="q32:OrganizationFilter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrganizationsResult" nillable="true" type="q33:ArrayOfOrganization" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" type="q34:guid" />
+        <xs:element xmlns:q35="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filtres" nillable="true" type="q35:OrganizationFilter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrganizationsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrganizationsListResult" nillable="true" type="q36:ArrayOfOrganization" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="organization" nillable="true" type="q37:Organization" />
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateOrganizationResult" type="q38:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrJoinOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" minOccurs="1" name="organization" nillable="true" type="q39:OrganizationData" />
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrJoinOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateOrJoinOrganizationResult" type="q40:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrJoinOrganizationOnGuid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" minOccurs="1" name="organization" nillable="true" type="q41:OrganizationData" />
+        <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="userId" type="q42:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrJoinOrganizationOnGuidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateOrJoinOrganizationOnGuidResult" type="q43:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindOrganizationByInn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="inn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindOrganizationByInnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="FindOrganizationByInnResult" nillable="true" type="q44:Organization" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLegalForms">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLegalFormsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetLegalFormsResult" nillable="true" type="q45:ArrayOfLegalForm" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLegalFormById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q46:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLegalFormByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetLegalFormByIdResult" nillable="true" type="q47:LegalForm" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRelationUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRelationUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetRelationUsersResult" nillable="true" type="q48:ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="billId" type="q49:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetBillResult" nillable="true" type="q50:Bill" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchPhysicalPersonOnEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchPhysicalPersonOnEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="SearchPhysicalPersonOnEmailResult" nillable="true" type="q51:CustomerPhysicalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhysicalPersonOnId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" type="q52:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhysicalPersonOnIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetPhysicalPersonOnIdResult" nillable="true" type="q53:CustomerPhysicalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhysicalPersonOnBitrixId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhysicalPersonOnBitrixIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetPhysicalPersonOnBitrixIdResult" nillable="true" type="q54:CustomerPhysicalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhysicalPerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="customerPhysical" nillable="true" type="q55:CustomerPhysicalData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhysicalPersonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CreatePhysicalPersonResult" nillable="true" type="q56:ResultData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBonusPointsOnContactId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" type="q57:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBonusPointsOnContactIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetBonusPointsOnContactIdResult" nillable="true" type="q58:BonusPoints" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixIdEx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filter" nillable="true" type="q59:FilterData" />
+        <xs:element minOccurs="1" name="status" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixIdExResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrdersByBitrixIdExResult" nillable="true" type="q60:ArrayOfOrderDataEx" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixIdCampaignFilteredEx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filter" nillable="true" type="q61:FilterData" />
+        <xs:element minOccurs="1" name="status" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixIdCampaignFilteredExResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrdersByBitrixIdCampaignFilteredExResult" nillable="true" type="q62:ArrayOfOrderDataEx" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSendingInvoicesByOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="orderId" type="q63:guid" />
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filter" nillable="true" type="q64:FilterData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSendingInvoicesByOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetSendingInvoicesByOrderIdResult" nillable="true" type="q65:ArrayOfSendingInvoiceData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filter" nillable="true" type="q66:FilterData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersByBitrixIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrdersByBitrixIdResult" nillable="true" type="q67:ArrayOfOrderData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderContentsByOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="orderId" type="q68:guid" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filter" nillable="true" type="q69:FilterData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderContentsByOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrderContentsByOrderIdResult" nillable="true" type="q70:ArrayOfOrderContentData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPromoCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="promoCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckPromoCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CheckPromoCodeResult" nillable="true" type="q71:PromoCodeData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q72="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="filter" nillable="true" type="q72:OrderFilter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetListOrderResult" nillable="true" type="q73:ArrayOfOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="orderId" type="q74:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrderResult" nillable="true" type="q75:OrderExtendInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderingInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="crmId" type="q76:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderingInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetOrderingInformationResult" nillable="true" type="q77:OrderData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BlockOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="orderId" type="q78:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BlockOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BlockOrderResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PreliminaryEstimate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="param" nillable="true" type="q79:CalculationOrderReq" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PreliminaryEstimateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="PreliminaryEstimateResult" nillable="true" type="q80:CalculationOrderRes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q81="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="req" nillable="true" type="q81:CreateOrderReq" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CreateOrderResult" nillable="true" type="q82:CreateOrderRes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" type="q83:guid" />
+        <xs:element xmlns:q84="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="req" nillable="true" type="q84:CreateOrderReq" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CreateOrdersResult" nillable="true" type="q85:CreateOrderRes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePaymentAndPayOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q86:guid" />
+        <xs:element minOccurs="1" name="statePayment" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePaymentAndPayOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreatePaymentAndPayOrderResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePaymentAndPayOrder2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q87:guid" />
+        <xs:element minOccurs="1" name="statePayment" type="xs:int" />
+        <xs:element minOccurs="1" name="when" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePaymentAndPayOrder2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreatePaymentAndPayOrder2Result" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePaymentOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="salesOrderId" type="q88:guid" />
+        <xs:element minOccurs="1" name="price" type="xs:decimal" />
+        <xs:element minOccurs="1" name="paymentDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePaymentOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" minOccurs="0" name="CreatePaymentOrderResult" nillable="true" type="q89:Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateVerificationActs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element minOccurs="1" name="startDate" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="endDate" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateVerificationActsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CreateVerificationActsResult" nillable="true" type="q90:ArrayOfVerificationActData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixid" type="xs:int" />
+        <xs:element minOccurs="1" name="fromdate" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="todate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetInvoiceResult" nillable="true" type="q91:ArrayOfInvoiceData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceEx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixid" type="xs:int" />
+        <xs:element minOccurs="1" name="fromdate" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="todate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceExResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetInvoiceExResult" nillable="true" type="q92:ArrayOfInvoiceData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FormulationPrintDocuments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="invoiceId" type="q93:guid" />
+        <xs:element minOccurs="1" name="bitrixid" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FormulationPrintDocumentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FormulationPrintDocumentsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOrderExtendedData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="orderId" type="q94:guid" />
+        <xs:element minOccurs="1" name="data" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOrderExtendedDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatedOrderStatusRecurrent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="salesOrderId" type="q95:guid" />
+        <xs:element minOccurs="1" name="status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatedOrderStatusRecurrentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.Proxy.Models" minOccurs="0" name="UpdatedOrderStatusRecurrentResult" nillable="true" type="q96:Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSaleOrderOnOrderNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="orderNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSaleOrderOnOrderNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" minOccurs="0" name="GetSaleOrderOnOrderNumberResult" nillable="true" type="q97:OrderData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataInvoiceForPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="questionsId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataInvoiceForPaymentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" minOccurs="0" name="GetDataInvoiceForPaymentResult" nillable="true" type="q98:Invoice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataCustomerAndOrderOnOrderNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="orderNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataCustomerAndOrderOnOrderNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataCustomerAndOrderOnOrderNumberResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCashFlowOnOrdersNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="orderNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCashFlowOnOrdersNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" minOccurs="0" name="GetCashFlowOnOrdersNumberResult" nillable="true" type="q99:ArrayOfCashFlowInOrders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCashFlowOnPaymentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="paymentId" type="q100:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCashFlowOnPaymentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" minOccurs="0" name="GetCashFlowOnPaymentIdResult" nillable="true" type="q101:CashFlowInOrders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCashFlowOnSalesOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="salesOrderId" type="q102:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCashFlowOnSalesOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" minOccurs="0" name="GetCashFlowOnSalesOrderIdResult" nillable="true" type="q103:ArrayOfCashFlowInOrders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceSystemInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceSystemInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetPriceSystemInfoResult" nillable="true" type="q104:PriceSystemInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceSystemInfoByPriceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q105:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceSystemInfoByPriceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetPriceSystemInfoByPriceListResult" nillable="true" type="q106:PriceSystemInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceSystemInfoByProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q107:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceSystemInfoByProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetPriceSystemInfoByProductResult" nillable="true" type="q108:PriceSystemInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPointsByBitrixId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPointsByBitrixIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetUserPointsByBitrixIdResult" nillable="true" type="q109:ArrayOfUserPointsData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserStateSendingByBitrixId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserStateSendingByBitrixIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetUserStateSendingByBitrixIdResult" nillable="true" type="q110:ArrayOfStateSendingContactData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q111="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="phone" nillable="true" type="q111:PhoneData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreatePhoneResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPhone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" type="q112:guid" />
+        <xs:element xmlns:q113="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="phone" nillable="true" type="q113:PhoneData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyPhoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModifyPhoneResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q114="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="address" nillable="true" type="q114:AddressData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateOrUpdateAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateOrUpdateAddressResult" type="q115:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" type="q116:guid" />
+        <xs:element xmlns:q117="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="address" nillable="true" type="q117:AddressData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ModifyAddressResult" type="q118:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="addressid" type="q119:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetAddressResult" nillable="true" type="q120:Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddresses">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetAddressesResult" nillable="true" type="q121:ArrayOfAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRelationAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRelationAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetRelationAddressResult" nillable="true" type="q122:ArrayOfAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element xmlns:q123="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="address" nillable="true" type="q123:Address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateAddressResult" type="q124:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRussiaGuid">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRussiaGuidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="GetRussiaGuidResult" nillable="true" type="q125:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindUserByEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindUserByEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="FindUserByEmailResult" nillable="true" type="q126:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindUserBitrixId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindUserBitrixIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="FindUserBitrixIdResult" nillable="true" type="q127:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindUserById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" type="q128:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindUserByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="FindUserByIdResult" nillable="true" type="q129:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateContactAndJoinWithOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+        <xs:element xmlns:q130="http://Norbit.Crm.Action.DataDefinition" minOccurs="1" name="phone" nillable="true" type="q130:PhoneData" />
+        <xs:element minOccurs="1" name="name" nillable="true" type="xs:string" />
+        <xs:element xmlns:q131="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="organizationId" type="q131:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateContactAndJoinWithOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CreateContactAndJoinWithOrganizationResult" nillable="true" type="q132:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefusalInteraction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefusalInteractionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RefusalInteractionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefusalInteractionEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefusalInteractionEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RefusalInteractionEmailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhysicalContactList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="contactList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhysicalContactListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreatePhysicalContactListResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterParticipantList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="participantList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterParticipantListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegisterParticipantListResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhoneContact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="parameters" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePhoneContactResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreatePhoneContactResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q133:guid" />
+        <xs:element minOccurs="1" name="fileFormat" type="xs:int" />
+        <xs:element minOccurs="1" name="fileType" type="xs:int" />
+        <xs:element minOccurs="1" name="eventId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetFileResult" nillable="true" type="q134:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileWithPostfix">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q135:guid" />
+        <xs:element minOccurs="1" name="fileFormat" type="xs:int" />
+        <xs:element minOccurs="1" name="fileType" type="xs:int" />
+        <xs:element minOccurs="1" name="eventId" type="xs:int" />
+        <xs:element minOccurs="1" name="postfix" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileWithPostfixResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetFileWithPostfixResult" nillable="true" type="q136:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileWithDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q137:guid" />
+        <xs:element minOccurs="1" name="fileFormat" type="xs:int" />
+        <xs:element minOccurs="1" name="fileType" type="xs:int" />
+        <xs:element minOccurs="1" name="eventId" type="xs:int" />
+        <xs:element minOccurs="1" name="postfix" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="date" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileWithDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetFileWithDateResult" nillable="true" type="q138:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileWithStartDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="id" type="q139:guid" />
+        <xs:element minOccurs="1" name="fileFormat" type="xs:int" />
+        <xs:element minOccurs="1" name="fileType" type="xs:int" />
+        <xs:element minOccurs="1" name="eventId" type="xs:int" />
+        <xs:element minOccurs="1" name="postfix" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="date" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="startdate" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileWithStartDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetFileWithStartDateResult" nillable="true" type="q140:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceDocumentInText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="invoiceId" type="q141:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceDocumentInTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetInvoiceDocumentInTextResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoicePartnerDocumentInText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="invoiceId" type="q142:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoicePartnerDocumentInTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetInvoicePartnerDocumentInTextResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrintVerificationActInExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="verificationActId" type="q143:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrintVerificationActInExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrintVerificationActInExcelResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrintVerificationActInExcelInText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="verificationActId" type="q144:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrintVerificationActInExcelInTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrintVerificationActInExcelInTextResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDmBillForHtml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="commandmentNr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="productPublicationCode" type="xs:int" />
+        <xs:element minOccurs="1" name="productType" type="xs:int" />
+        <xs:element minOccurs="1" name="interval" type="xs:int" />
+        <xs:element minOccurs="1" name="dateOn" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="campaignNr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="productNr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDmBillForHtmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetDmBillForHtmlResult" nillable="true" type="q145:PrintDmBillToHtml" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncident">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixid" type="xs:int" />
+        <xs:element minOccurs="1" name="incidenttype" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="statuscode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="pagenumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="pagesize" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="rating" nillable="true" type="xs:boolean" />
+        <xs:element minOccurs="1" name="newStateId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetIncidentResult" nillable="true" type="q146:ArrayOfIncidentData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateIncidentEx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixid" type="xs:int" />
+        <xs:element xmlns:q147="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="incidentType" type="q147:guid" />
+        <xs:element minOccurs="1" name="message" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="decision" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="deadline" type="xs:dateTime" />
+        <xs:element xmlns:q148="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="incidentSource" type="q148:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateIncidentExResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CreateIncidentExResult" nillable="true" type="q149:ArrayOfCrtIncidentData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIncidentRating">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixid" type="xs:int" />
+        <xs:element xmlns:q150="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="incidentId" type="q150:guid" />
+        <xs:element minOccurs="1" name="rating" type="xs:int" />
+        <xs:element minOccurs="1" name="commentRating" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIncidentRatingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateIncidentRatingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidationContactFace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixid" type="xs:int" />
+        <xs:element minOccurs="1" name="inn" type="xs:long" />
+        <xs:element minOccurs="1" name="invoicenr" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidationContactFaceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="ValidationContactFaceResult" nillable="true" type="q151:ArrayOfValidationContactFaceData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EventsFromAptoID2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="id" nillable="true" type="xs:long" />
+        <xs:element minOccurs="1" name="bitrixId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="1" name="eventDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="eventID" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EventsFromAptoID2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="EventsFromAptoID2Result" nillable="true" type="q152:ArrayOfEventsFromAptoID2Data" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CouldUserAskQuestion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CouldUserAskQuestionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CouldUserAskQuestionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NotifyQuestionChange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="question" nillable="true" type="q153:QuestionData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NotifyQuestionChangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NotifyQuestionChangeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CouldUserAskQuestion_wQuestionStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CouldUserAskQuestion_wQuestionStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CouldUserAskQuestion_wQuestionStatusResult" nillable="true" type="q154:ArrayOfAskQuestionData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentExcellentComment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="dateOn" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncidentExcellentCommentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetIncidentExcellentCommentResult" nillable="true" type="q155:ArrayOfIncidentExcellentCommentData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomersStatusByInnKpp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="request" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomersStatusByInnKppResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetCustomersStatusByInnKppResult" nillable="true" type="q156:ArrayOfCheckCustomerData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="dealerId" type="q157:guid" />
+        <xs:element minOccurs="1" name="inn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="kpp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q158="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="SearchCustomerResult" nillable="true" type="q158:ArrayOfCustomerData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveOrUpdateSupport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q159="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="supportId" nillable="true" type="q159:guid" />
+        <xs:element minOccurs="1" name="supportType" nillable="true" type="xs:int" />
+        <xs:element minOccurs="1" name="status" nillable="true" type="xs:int" />
+        <xs:element xmlns:q160="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="accountId" nillable="true" type="q160:guid" />
+        <xs:element xmlns:q161="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="contactId" nillable="true" type="q161:guid" />
+        <xs:element xmlns:q162="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="mainProductId" nillable="true" type="q162:guid" />
+        <xs:element minOccurs="1" name="startDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="endDate" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q163="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="systemUserId" nillable="true" type="q163:guid" />
+        <xs:element xmlns:q164="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="bizUnitId" nillable="true" type="q164:guid" />
+        <xs:element xmlns:q165="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="1" name="dealerId" nillable="true" type="q165:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveOrUpdateSupportResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSubscriptionsData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="inn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSubscriptionsDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetUserSubscriptionsDataResult" nillable="true" type="q166:ArrayOfMagazineSubscriptionsDataEx" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSubscriptionStatusByBitrixId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSubscriptionStatusByBitrixIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserSubscriptionStatusByBitrixIdResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSubscriptionProductLibraryByBitrixId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSubscriptionProductLibraryByBitrixIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetUserSubscriptionProductLibraryByBitrixIdResult" nillable="true" type="q167:SubscriptionProductLibraryData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrmExport">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrmExportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q168="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="CrmExportResult" nillable="true" type="q168:CrmExportData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceListForPartners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="directionNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="productNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriceListForPartnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetPriceListForPartnersResult" nillable="true" type="q169:ArrayOfPriceModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrmImportOrphanCarts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" minOccurs="1" name="orphanCarts" nillable="true" type="q170:ArrayOfOrphanCartF" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrmImportOrphanCartsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CrmImportOrphanCartsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShopOffers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="partnerId" type="xs:int" />
+        <xs:element minOccurs="1" name="type" nillable="true" type="xs:int" />
+        <xs:element minOccurs="1" name="startDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="1" name="period" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShopOffersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="GetShopOffersResult" nillable="true" type="q171:ArrayOfShopOffer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" name="bitrixId" type="xs:int" />
+        <xs:element minOccurs="1" name="eventType" type="xs:int" />
+        <xs:element minOccurs="1" name="siteAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="1" name="publicationCode" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateEventResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterLicense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" minOccurs="1" name="registerLicenseDto" nillable="true" type="q172:RegisterLicenseDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterLicenseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" minOccurs="0" name="RegisterLicenseResult" nillable="true" type="q173:RegisterLicenseDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/PublicServiceForPartners.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PublicServiceForPartners.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://83.69.214.126:7779/Services/PhoneCallsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfGetPhoneCallsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetPhoneCallsData" nillable="true" type="tns:GetPhoneCallsData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGetPhoneCallsData" nillable="true" type="tns:ArrayOfGetPhoneCallsData" />
+  <xs:complexType name="GetPhoneCallsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BitrixId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyId" type="ser:guid" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateEvent" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventNr" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="Inn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Kpp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Overview" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentPhoneCallId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneCallId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PhoneCallNr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryPhoneCallId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Priority" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductEvent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduledStart" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TimeDifference" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeEvent" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetPhoneCallsData" nillable="true" type="tns:GetPhoneCallsData" />
+  <xs:complexType name="ArrayOfActionStatusesData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActionStatusesData" nillable="true" type="tns:ActionStatusesData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActionStatusesData" nillable="true" type="tns:ArrayOfActionStatusesData" />
+  <xs:complexType name="ActionStatusesData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionStatusId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ActionStatusName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsFinal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSpecifyRefusalReason" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TypeActionStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeActionStatusName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionStatusesData" nillable="true" type="tns:ActionStatusesData" />
+  <xs:complexType name="RequestError">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestError" nillable="true" type="tns:RequestError" />
+</xs:schema>

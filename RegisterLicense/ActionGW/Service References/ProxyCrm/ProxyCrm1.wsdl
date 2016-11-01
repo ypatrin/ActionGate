@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://Norbit.Crm.Action.Proxy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Norbit.Crm.Action.Proxy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Norbit.Crm.Action.Proxy/Imports">
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd0" namespace="http://Norbit.Crm.Action.Proxy" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd2" namespace="http://Norbit.Crm.Action.DataDefinition" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.DataContracts" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.Proxy.Models" />
+      <xsd:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProtectedProxyCrm_SayHelloProtectedProxy_InputMessage">
+    <wsdl:part name="parameters" element="tns:SayHelloProtectedProxy" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_SayHelloProtectedProxy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SayHelloProtectedProxyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_CheckEmailRegistered_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailRegistered" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_CheckEmailRegistered_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailRegisteredResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_CheckEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_CheckEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_UpdateProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfile" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_UpdateProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_UpdateProfile2_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfile2" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_UpdateProfile2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfile2Response" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_GetSubscribeOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribeOrders" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_GetSubscribeOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribeOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_GetOrdersByBitrixIdCampaignFiltered_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixIdCampaignFiltered" />
+  </wsdl:message>
+  <wsdl:message name="IProtectedProxyCrm_GetOrdersByBitrixIdCampaignFiltered_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixIdCampaignFilteredResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ChangeParticipation_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeParticipation" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ChangeParticipation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeParticipationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetSeminarParticipants_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSeminarParticipants" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetSeminarParticipants_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSeminarParticipantsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAllSeminarEvents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSeminarEvents" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAllSeminarEvents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSeminarEventsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterParticipantEx_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterParticipantEx" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterParticipantEx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterParticipantExResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdateParticipant_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateParticipant" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdateParticipant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterParticipant_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterParticipant" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterParticipant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ParticipationAffixingBarcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipationAffixingBarcode" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ParticipationAffixingBarcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipationAffixingBarcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ParticipationAffixingUserIdandEventId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipationAffixingUserIdandEventId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ParticipationAffixingUserIdandEventId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipationAffixingUserIdandEventIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetEventMcfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventMcfer" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetEventMcfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventMcferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInformationRegistrationUkd_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInformationRegistrationUkd" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInformationRegistrationUkd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInformationRegistrationUkdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetMainProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetMainProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetJobtitlesWithProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobtitlesWithProducts" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetJobtitlesWithProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobtitlesWithProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAreasWithProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreasWithProducts" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAreasWithProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreasWithProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetMainProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainProducts" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetMainProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetScopePickList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScopePickList" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetScopePickList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScopePickListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCustomerSizePickList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerSizePickList" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCustomerSizePickList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerSizePickListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetActivePartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivePartners" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetActivePartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivePartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetMainProductsForId2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainProductsForId2" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetMainProductsForId2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMainProductsForId2Response" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetListIncident_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListIncident" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetListIncident_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListIncidentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateIncident_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIncident" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateIncident_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIncidentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncidentTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncidentTypes" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncidentTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncidentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncidentTypeById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncidentTypeById" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncidentTypeById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncidentTypeByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrganizations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizations" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrganizations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrganizationsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationsList" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrganizationsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrganizationsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrJoinOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrJoinOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrJoinOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrJoinOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrJoinOrganizationOnGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrJoinOrganizationOnGuid" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrJoinOrganizationOnGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrJoinOrganizationOnGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindOrganizationByInn_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindOrganizationByInn" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindOrganizationByInn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindOrganizationByInnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetLegalForms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLegalForms" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetLegalForms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLegalFormsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetLegalFormById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLegalFormById" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetLegalFormById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLegalFormByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetRelationUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRelationUsers" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetRelationUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRelationUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBill" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_SearchPhysicalPersonOnEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPhysicalPersonOnEmail" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_SearchPhysicalPersonOnEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPhysicalPersonOnEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPhysicalPersonOnId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhysicalPersonOnId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPhysicalPersonOnId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhysicalPersonOnIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPhysicalPersonOnBitrixId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhysicalPersonOnBitrixId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPhysicalPersonOnBitrixId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhysicalPersonOnBitrixIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhysicalPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhysicalPerson" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhysicalPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhysicalPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetBonusPointsOnContactId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBonusPointsOnContactId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetBonusPointsOnContactId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBonusPointsOnContactIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrdersByBitrixIdEx_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixIdEx" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrdersByBitrixIdEx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixIdExResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrdersByBitrixIdCampaignFilteredEx_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixIdCampaignFilteredEx" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrdersByBitrixIdCampaignFilteredEx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixIdCampaignFilteredExResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetSendingInvoicesByOrderId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSendingInvoicesByOrderId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetSendingInvoicesByOrderId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSendingInvoicesByOrderIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrdersByBitrixId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrdersByBitrixId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersByBitrixIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrderContentsByOrderId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderContentsByOrderId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrderContentsByOrderId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderContentsByOrderIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CheckPromoCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPromoCode" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CheckPromoCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPromoCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetListOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetListOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrderingInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderingInformation" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetOrderingInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderingInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_BlockOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:BlockOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_BlockOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BlockOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_PreliminaryEstimate_InputMessage">
+    <wsdl:part name="parameters" element="tns:PreliminaryEstimate" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_PreliminaryEstimate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PreliminaryEstimateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrders" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePaymentAndPayOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentAndPayOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePaymentAndPayOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentAndPayOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePaymentAndPayOrder2_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentAndPayOrder2" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePaymentAndPayOrder2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentAndPayOrder2Response" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePaymentOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentOrder" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePaymentOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePaymentOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateVerificationActs_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateVerificationActs" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateVerificationActs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateVerificationActsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoiceEx_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceEx" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoiceEx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceExResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FormulationPrintDocuments_InputMessage">
+    <wsdl:part name="parameters" element="tns:FormulationPrintDocuments" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FormulationPrintDocuments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FormulationPrintDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdateOrderExtendedData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderExtendedData" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdateOrderExtendedData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrderExtendedDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdatedOrderStatusRecurrent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatedOrderStatusRecurrent" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdatedOrderStatusRecurrent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatedOrderStatusRecurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetSaleOrderOnOrderNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSaleOrderOnOrderNumber" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetSaleOrderOnOrderNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSaleOrderOnOrderNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetDataInvoiceForPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataInvoiceForPayment" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetDataInvoiceForPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataInvoiceForPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetDataCustomerAndOrderOnOrderNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataCustomerAndOrderOnOrderNumber" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetDataCustomerAndOrderOnOrderNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataCustomerAndOrderOnOrderNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCashFlowOnOrdersNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCashFlowOnOrdersNumber" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCashFlowOnOrdersNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCashFlowOnOrdersNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCashFlowOnPaymentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCashFlowOnPaymentId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCashFlowOnPaymentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCashFlowOnPaymentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCashFlowOnSalesOrderId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCashFlowOnSalesOrderId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCashFlowOnSalesOrderId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCashFlowOnSalesOrderIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceSystemInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceSystemInfo" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceSystemInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceSystemInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceSystemInfoByPriceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceSystemInfoByPriceList" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceSystemInfoByPriceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceSystemInfoByPriceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceSystemInfoByProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceSystemInfoByProduct" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceSystemInfoByProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceSystemInfoByProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserPointsByBitrixId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPointsByBitrixId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserPointsByBitrixId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPointsByBitrixIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserStateSendingByBitrixId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserStateSendingByBitrixId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserStateSendingByBitrixId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserStateSendingByBitrixIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhone" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ModifyPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPhone" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ModifyPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrUpdateAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateAddress" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateOrUpdateAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateOrUpdateAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ModifyAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAddress" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ModifyAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddress" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAddresses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddresses" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetAddresses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetRelationAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRelationAddress" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetRelationAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRelationAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAddress" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetRussiaGuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRussiaGuid" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetRussiaGuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRussiaGuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindUserByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserByEmail" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindUserByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindUserBitrixId_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserBitrixId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindUserBitrixId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserBitrixIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindUserById_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserById" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_FindUserById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateContactAndJoinWithOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateContactAndJoinWithOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateContactAndJoinWithOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateContactAndJoinWithOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RefusalInteraction_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefusalInteraction" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RefusalInteraction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefusalInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RefusalInteractionEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefusalInteractionEmail" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RefusalInteractionEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefusalInteractionEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhysicalContactList_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhysicalContactList" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhysicalContactList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhysicalContactListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterParticipantList_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterParticipantList" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterParticipantList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterParticipantListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhoneContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhoneContact" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreatePhoneContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePhoneContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFile" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFileWithPostfix_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileWithPostfix" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFileWithPostfix_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileWithPostfixResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFileWithDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileWithDate" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFileWithDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileWithDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFileWithStartDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileWithStartDate" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetFileWithStartDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileWithStartDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoiceDocumentInText_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceDocumentInText" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoiceDocumentInText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceDocumentInTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoicePartnerDocumentInText_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoicePartnerDocumentInText" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetInvoicePartnerDocumentInText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoicePartnerDocumentInTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPrintVerificationActInExcel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintVerificationActInExcel" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPrintVerificationActInExcel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintVerificationActInExcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPrintVerificationActInExcelInText_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintVerificationActInExcelInText" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPrintVerificationActInExcelInText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintVerificationActInExcelInTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetDmBillForHtml_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDmBillForHtml" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetDmBillForHtml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDmBillForHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncident_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncident" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncident_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncidentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateIncidentEx_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIncidentEx" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateIncidentEx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIncidentExResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdateIncidentRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIncidentRating" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_UpdateIncidentRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIncidentRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ValidationContactFace_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidationContactFace" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_ValidationContactFace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidationContactFaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_EventsFromAptoID2_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventsFromAptoID2" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_EventsFromAptoID2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventsFromAptoID2Response" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CouldUserAskQuestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CouldUserAskQuestion" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CouldUserAskQuestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CouldUserAskQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_NotifyQuestionChange_InputMessage">
+    <wsdl:part name="parameters" element="tns:NotifyQuestionChange" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_NotifyQuestionChange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NotifyQuestionChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CouldUserAskQuestion_wQuestionStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:CouldUserAskQuestion_wQuestionStatus" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CouldUserAskQuestion_wQuestionStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CouldUserAskQuestion_wQuestionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncidentExcellentComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncidentExcellentComment" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetIncidentExcellentComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncidentExcellentCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCustomersStatusByInnKpp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersStatusByInnKpp" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetCustomersStatusByInnKpp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersStatusByInnKppResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_SearchCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_SearchCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_SaveOrUpdateSupport_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrUpdateSupport" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_SaveOrUpdateSupport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrUpdateSupportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserSubscriptionsData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionsData" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserSubscriptionsData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionsDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserSubscriptionStatusByBitrixId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionStatusByBitrixId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserSubscriptionStatusByBitrixId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionStatusByBitrixIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserSubscriptionProductLibraryByBitrixId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionProductLibraryByBitrixId" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetUserSubscriptionProductLibraryByBitrixId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionProductLibraryByBitrixIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CrmExport_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrmExport" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CrmExport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrmExportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceListForPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceListForPartners" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetPriceListForPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceListForPartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CrmImportOrphanCarts_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrmImportOrphanCarts" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CrmImportOrphanCarts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrmImportOrphanCartsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetShopOffers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShopOffers" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_GetShopOffers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShopOffersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEvent" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_CreateEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterLicense" />
+  </wsdl:message>
+  <wsdl:message name="IPublicCrmProxy_RegisterLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterLicenseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProtectedProxyCrm">
+    <wsdl:operation name="SayHelloProtectedProxy">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/SayHelloProtectedProxy" message="tns:IProtectedProxyCrm_SayHelloProtectedProxy_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/SayHelloProtectedProxyResponse" message="tns:IProtectedProxyCrm_SayHelloProtectedProxy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmailRegistered">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/CheckEmailRegistered" message="tns:IProtectedProxyCrm_CheckEmailRegistered_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/CheckEmailRegisteredResponse" message="tns:IProtectedProxyCrm_CheckEmailRegistered_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEmail">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/CheckEmail" message="tns:IProtectedProxyCrm_CheckEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/CheckEmailResponse" message="tns:IProtectedProxyCrm_CheckEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/UpdateProfile" message="tns:IProtectedProxyCrm_UpdateProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/UpdateProfileResponse" message="tns:IProtectedProxyCrm_UpdateProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfile2">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/UpdateProfile2" message="tns:IProtectedProxyCrm_UpdateProfile2_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/UpdateProfile2Response" message="tns:IProtectedProxyCrm_UpdateProfile2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribeOrders">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/GetSubscribeOrders" message="tns:IProtectedProxyCrm_GetSubscribeOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/GetSubscribeOrdersResponse" message="tns:IProtectedProxyCrm_GetSubscribeOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixIdCampaignFiltered">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/GetOrdersByBitrixIdCampaignFiltered" message="tns:IProtectedProxyCrm_GetOrdersByBitrixIdCampaignFiltered_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IProtectedProxyCrm/GetOrdersByBitrixIdCampaignFilteredResponse" message="tns:IProtectedProxyCrm_GetOrdersByBitrixIdCampaignFiltered_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPublicCrmProxy">
+    <wsdl:operation name="ChangeParticipation">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ChangeParticipation" message="tns:IPublicCrmProxy_ChangeParticipation_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ChangeParticipationResponse" message="tns:IPublicCrmProxy_ChangeParticipation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSeminarParticipants">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSeminarParticipants" message="tns:IPublicCrmProxy_GetSeminarParticipants_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSeminarParticipantsResponse" message="tns:IPublicCrmProxy_GetSeminarParticipants_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSeminarEvents">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAllSeminarEvents" message="tns:IPublicCrmProxy_GetAllSeminarEvents_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAllSeminarEventsResponse" message="tns:IPublicCrmProxy_GetAllSeminarEvents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterParticipantEx">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipantEx" message="tns:IPublicCrmProxy_RegisterParticipantEx_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipantExResponse" message="tns:IPublicCrmProxy_RegisterParticipantEx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateParticipant">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateParticipant" message="tns:IPublicCrmProxy_UpdateParticipant_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateParticipantResponse" message="tns:IPublicCrmProxy_UpdateParticipant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterParticipant">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipant" message="tns:IPublicCrmProxy_RegisterParticipant_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipantResponse" message="tns:IPublicCrmProxy_RegisterParticipant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipationAffixingBarcode">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ParticipationAffixingBarcode" message="tns:IPublicCrmProxy_ParticipationAffixingBarcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ParticipationAffixingBarcodeResponse" message="tns:IPublicCrmProxy_ParticipationAffixingBarcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipationAffixingUserIdandEventId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ParticipationAffixingUserIdandEventId" message="tns:IPublicCrmProxy_ParticipationAffixingUserIdandEventId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ParticipationAffixingUserIdandEventIdResponse" message="tns:IPublicCrmProxy_ParticipationAffixingUserIdandEventId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventMcfer">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetEventMcfer" message="tns:IPublicCrmProxy_GetEventMcfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetEventMcferResponse" message="tns:IPublicCrmProxy_GetEventMcfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInformationRegistrationUkd">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInformationRegistrationUkd" message="tns:IPublicCrmProxy_GetInformationRegistrationUkd_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInformationRegistrationUkdResponse" message="tns:IPublicCrmProxy_GetInformationRegistrationUkd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMainProductInfo">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProductInfo" message="tns:IPublicCrmProxy_GetMainProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProductInfoResponse" message="tns:IPublicCrmProxy_GetMainProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobtitlesWithProducts">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetJobtitlesWithProducts" message="tns:IPublicCrmProxy_GetJobtitlesWithProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetJobtitlesWithProductsResponse" message="tns:IPublicCrmProxy_GetJobtitlesWithProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreasWithProducts">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAreasWithProducts" message="tns:IPublicCrmProxy_GetAreasWithProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAreasWithProductsResponse" message="tns:IPublicCrmProxy_GetAreasWithProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMainProducts">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProducts" message="tns:IPublicCrmProxy_GetMainProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProductsResponse" message="tns:IPublicCrmProxy_GetMainProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScopePickList">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetScopePickList" message="tns:IPublicCrmProxy_GetScopePickList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetScopePickListResponse" message="tns:IPublicCrmProxy_GetScopePickList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerSizePickList">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCustomerSizePickList" message="tns:IPublicCrmProxy_GetCustomerSizePickList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCustomerSizePickListResponse" message="tns:IPublicCrmProxy_GetCustomerSizePickList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivePartners">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetActivePartners" message="tns:IPublicCrmProxy_GetActivePartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetActivePartnersResponse" message="tns:IPublicCrmProxy_GetActivePartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMainProductsForId2">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProductsForId2" message="tns:IPublicCrmProxy_GetMainProductsForId2_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetMainProductsForId2Response" message="tns:IPublicCrmProxy_GetMainProductsForId2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListIncident">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetListIncident" message="tns:IPublicCrmProxy_GetListIncident_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetListIncidentResponse" message="tns:IPublicCrmProxy_GetListIncident_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIncident">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateIncident" message="tns:IPublicCrmProxy_CreateIncident_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateIncidentResponse" message="tns:IPublicCrmProxy_CreateIncident_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentTypes">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentTypes" message="tns:IPublicCrmProxy_GetIncidentTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentTypesResponse" message="tns:IPublicCrmProxy_GetIncidentTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentTypeById">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentTypeById" message="tns:IPublicCrmProxy_GetIncidentTypeById_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentTypeByIdResponse" message="tns:IPublicCrmProxy_GetIncidentTypeById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizations">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrganizations" message="tns:IPublicCrmProxy_GetOrganizations_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrganizationsResponse" message="tns:IPublicCrmProxy_GetOrganizations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrganizationsList">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrganizationsList" message="tns:IPublicCrmProxy_GetOrganizationsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrganizationsListResponse" message="tns:IPublicCrmProxy_GetOrganizationsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrganization">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrganization" message="tns:IPublicCrmProxy_CreateOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrganizationResponse" message="tns:IPublicCrmProxy_CreateOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrJoinOrganization">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrJoinOrganization" message="tns:IPublicCrmProxy_CreateOrJoinOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrJoinOrganizationResponse" message="tns:IPublicCrmProxy_CreateOrJoinOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrJoinOrganizationOnGuid">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrJoinOrganizationOnGuid" message="tns:IPublicCrmProxy_CreateOrJoinOrganizationOnGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrJoinOrganizationOnGuidResponse" message="tns:IPublicCrmProxy_CreateOrJoinOrganizationOnGuid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindOrganizationByInn">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindOrganizationByInn" message="tns:IPublicCrmProxy_FindOrganizationByInn_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindOrganizationByInnResponse" message="tns:IPublicCrmProxy_FindOrganizationByInn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLegalForms">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetLegalForms" message="tns:IPublicCrmProxy_GetLegalForms_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetLegalFormsResponse" message="tns:IPublicCrmProxy_GetLegalForms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLegalFormById">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetLegalFormById" message="tns:IPublicCrmProxy_GetLegalFormById_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetLegalFormByIdResponse" message="tns:IPublicCrmProxy_GetLegalFormById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationUsers">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRelationUsers" message="tns:IPublicCrmProxy_GetRelationUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRelationUsersResponse" message="tns:IPublicCrmProxy_GetRelationUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBill">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetBill" message="tns:IPublicCrmProxy_GetBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetBillResponse" message="tns:IPublicCrmProxy_GetBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPhysicalPersonOnEmail">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SearchPhysicalPersonOnEmail" message="tns:IPublicCrmProxy_SearchPhysicalPersonOnEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SearchPhysicalPersonOnEmailResponse" message="tns:IPublicCrmProxy_SearchPhysicalPersonOnEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhysicalPersonOnId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPhysicalPersonOnId" message="tns:IPublicCrmProxy_GetPhysicalPersonOnId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPhysicalPersonOnIdResponse" message="tns:IPublicCrmProxy_GetPhysicalPersonOnId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhysicalPersonOnBitrixId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPhysicalPersonOnBitrixId" message="tns:IPublicCrmProxy_GetPhysicalPersonOnBitrixId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPhysicalPersonOnBitrixIdResponse" message="tns:IPublicCrmProxy_GetPhysicalPersonOnBitrixId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhysicalPerson">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhysicalPerson" message="tns:IPublicCrmProxy_CreatePhysicalPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhysicalPersonResponse" message="tns:IPublicCrmProxy_CreatePhysicalPerson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBonusPointsOnContactId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetBonusPointsOnContactId" message="tns:IPublicCrmProxy_GetBonusPointsOnContactId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetBonusPointsOnContactIdResponse" message="tns:IPublicCrmProxy_GetBonusPointsOnContactId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixIdEx">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixIdEx" message="tns:IPublicCrmProxy_GetOrdersByBitrixIdEx_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixIdExResponse" message="tns:IPublicCrmProxy_GetOrdersByBitrixIdEx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixIdCampaignFilteredEx">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixIdCampaignFilteredEx" message="tns:IPublicCrmProxy_GetOrdersByBitrixIdCampaignFilteredEx_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixIdCampaignFilteredExResponse" message="tns:IPublicCrmProxy_GetOrdersByBitrixIdCampaignFilteredEx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSendingInvoicesByOrderId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSendingInvoicesByOrderId" message="tns:IPublicCrmProxy_GetSendingInvoicesByOrderId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSendingInvoicesByOrderIdResponse" message="tns:IPublicCrmProxy_GetSendingInvoicesByOrderId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersByBitrixId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixId" message="tns:IPublicCrmProxy_GetOrdersByBitrixId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrdersByBitrixIdResponse" message="tns:IPublicCrmProxy_GetOrdersByBitrixId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderContentsByOrderId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrderContentsByOrderId" message="tns:IPublicCrmProxy_GetOrderContentsByOrderId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrderContentsByOrderIdResponse" message="tns:IPublicCrmProxy_GetOrderContentsByOrderId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPromoCode">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CheckPromoCode" message="tns:IPublicCrmProxy_CheckPromoCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CheckPromoCodeResponse" message="tns:IPublicCrmProxy_CheckPromoCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOrder">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetListOrder" message="tns:IPublicCrmProxy_GetListOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetListOrderResponse" message="tns:IPublicCrmProxy_GetListOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrder" message="tns:IPublicCrmProxy_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrderResponse" message="tns:IPublicCrmProxy_GetOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderingInformation">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrderingInformation" message="tns:IPublicCrmProxy_GetOrderingInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetOrderingInformationResponse" message="tns:IPublicCrmProxy_GetOrderingInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BlockOrder">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/BlockOrder" message="tns:IPublicCrmProxy_BlockOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/BlockOrderResponse" message="tns:IPublicCrmProxy_BlockOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PreliminaryEstimate">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/PreliminaryEstimate" message="tns:IPublicCrmProxy_PreliminaryEstimate_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/PreliminaryEstimateResponse" message="tns:IPublicCrmProxy_PreliminaryEstimate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrder" message="tns:IPublicCrmProxy_CreateOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrderResponse" message="tns:IPublicCrmProxy_CreateOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrders">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrders" message="tns:IPublicCrmProxy_CreateOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrdersResponse" message="tns:IPublicCrmProxy_CreateOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentAndPayOrder">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentAndPayOrder" message="tns:IPublicCrmProxy_CreatePaymentAndPayOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentAndPayOrderResponse" message="tns:IPublicCrmProxy_CreatePaymentAndPayOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentAndPayOrder2">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentAndPayOrder2" message="tns:IPublicCrmProxy_CreatePaymentAndPayOrder2_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentAndPayOrder2Response" message="tns:IPublicCrmProxy_CreatePaymentAndPayOrder2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentOrder">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentOrder" message="tns:IPublicCrmProxy_CreatePaymentOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePaymentOrderResponse" message="tns:IPublicCrmProxy_CreatePaymentOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateVerificationActs">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateVerificationActs" message="tns:IPublicCrmProxy_CreateVerificationActs_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateVerificationActsResponse" message="tns:IPublicCrmProxy_CreateVerificationActs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoice" message="tns:IPublicCrmProxy_GetInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoiceResponse" message="tns:IPublicCrmProxy_GetInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceEx">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoiceEx" message="tns:IPublicCrmProxy_GetInvoiceEx_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoiceExResponse" message="tns:IPublicCrmProxy_GetInvoiceEx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FormulationPrintDocuments">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FormulationPrintDocuments" message="tns:IPublicCrmProxy_FormulationPrintDocuments_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FormulationPrintDocumentsResponse" message="tns:IPublicCrmProxy_FormulationPrintDocuments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderExtendedData">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateOrderExtendedData" message="tns:IPublicCrmProxy_UpdateOrderExtendedData_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateOrderExtendedDataResponse" message="tns:IPublicCrmProxy_UpdateOrderExtendedData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatedOrderStatusRecurrent">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdatedOrderStatusRecurrent" message="tns:IPublicCrmProxy_UpdatedOrderStatusRecurrent_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdatedOrderStatusRecurrentResponse" message="tns:IPublicCrmProxy_UpdatedOrderStatusRecurrent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSaleOrderOnOrderNumber">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSaleOrderOnOrderNumber" message="tns:IPublicCrmProxy_GetSaleOrderOnOrderNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetSaleOrderOnOrderNumberResponse" message="tns:IPublicCrmProxy_GetSaleOrderOnOrderNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataInvoiceForPayment">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDataInvoiceForPayment" message="tns:IPublicCrmProxy_GetDataInvoiceForPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDataInvoiceForPaymentResponse" message="tns:IPublicCrmProxy_GetDataInvoiceForPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataCustomerAndOrderOnOrderNumber">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDataCustomerAndOrderOnOrderNumber" message="tns:IPublicCrmProxy_GetDataCustomerAndOrderOnOrderNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDataCustomerAndOrderOnOrderNumberResponse" message="tns:IPublicCrmProxy_GetDataCustomerAndOrderOnOrderNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCashFlowOnOrdersNumber">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnOrdersNumber" message="tns:IPublicCrmProxy_GetCashFlowOnOrdersNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnOrdersNumberResponse" message="tns:IPublicCrmProxy_GetCashFlowOnOrdersNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCashFlowOnPaymentId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnPaymentId" message="tns:IPublicCrmProxy_GetCashFlowOnPaymentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnPaymentIdResponse" message="tns:IPublicCrmProxy_GetCashFlowOnPaymentId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCashFlowOnSalesOrderId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnSalesOrderId" message="tns:IPublicCrmProxy_GetCashFlowOnSalesOrderId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCashFlowOnSalesOrderIdResponse" message="tns:IPublicCrmProxy_GetCashFlowOnSalesOrderId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceSystemInfo">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfo" message="tns:IPublicCrmProxy_GetPriceSystemInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfoResponse" message="tns:IPublicCrmProxy_GetPriceSystemInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceSystemInfoByPriceList">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfoByPriceList" message="tns:IPublicCrmProxy_GetPriceSystemInfoByPriceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfoByPriceListResponse" message="tns:IPublicCrmProxy_GetPriceSystemInfoByPriceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceSystemInfoByProduct">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfoByProduct" message="tns:IPublicCrmProxy_GetPriceSystemInfoByProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceSystemInfoByProductResponse" message="tns:IPublicCrmProxy_GetPriceSystemInfoByProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPointsByBitrixId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserPointsByBitrixId" message="tns:IPublicCrmProxy_GetUserPointsByBitrixId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserPointsByBitrixIdResponse" message="tns:IPublicCrmProxy_GetUserPointsByBitrixId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserStateSendingByBitrixId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserStateSendingByBitrixId" message="tns:IPublicCrmProxy_GetUserStateSendingByBitrixId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserStateSendingByBitrixIdResponse" message="tns:IPublicCrmProxy_GetUserStateSendingByBitrixId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhone">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhone" message="tns:IPublicCrmProxy_CreatePhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhoneResponse" message="tns:IPublicCrmProxy_CreatePhone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPhone">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ModifyPhone" message="tns:IPublicCrmProxy_ModifyPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ModifyPhoneResponse" message="tns:IPublicCrmProxy_ModifyPhone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrUpdateAddress">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrUpdateAddress" message="tns:IPublicCrmProxy_CreateOrUpdateAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateOrUpdateAddressResponse" message="tns:IPublicCrmProxy_CreateOrUpdateAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyAddress">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ModifyAddress" message="tns:IPublicCrmProxy_ModifyAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ModifyAddressResponse" message="tns:IPublicCrmProxy_ModifyAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAddress" message="tns:IPublicCrmProxy_GetAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAddressResponse" message="tns:IPublicCrmProxy_GetAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddresses">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAddresses" message="tns:IPublicCrmProxy_GetAddresses_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetAddressesResponse" message="tns:IPublicCrmProxy_GetAddresses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationAddress">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRelationAddress" message="tns:IPublicCrmProxy_GetRelationAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRelationAddressResponse" message="tns:IPublicCrmProxy_GetRelationAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAddress">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateAddress" message="tns:IPublicCrmProxy_CreateAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateAddressResponse" message="tns:IPublicCrmProxy_CreateAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRussiaGuid">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRussiaGuid" message="tns:IPublicCrmProxy_GetRussiaGuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetRussiaGuidResponse" message="tns:IPublicCrmProxy_GetRussiaGuid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindUserByEmail">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserByEmail" message="tns:IPublicCrmProxy_FindUserByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserByEmailResponse" message="tns:IPublicCrmProxy_FindUserByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindUserBitrixId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserBitrixId" message="tns:IPublicCrmProxy_FindUserBitrixId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserBitrixIdResponse" message="tns:IPublicCrmProxy_FindUserBitrixId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindUserById">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserById" message="tns:IPublicCrmProxy_FindUserById_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/FindUserByIdResponse" message="tns:IPublicCrmProxy_FindUserById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateContactAndJoinWithOrganization">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateContactAndJoinWithOrganization" message="tns:IPublicCrmProxy_CreateContactAndJoinWithOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateContactAndJoinWithOrganizationResponse" message="tns:IPublicCrmProxy_CreateContactAndJoinWithOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefusalInteraction">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RefusalInteraction" message="tns:IPublicCrmProxy_RefusalInteraction_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RefusalInteractionResponse" message="tns:IPublicCrmProxy_RefusalInteraction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefusalInteractionEmail">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RefusalInteractionEmail" message="tns:IPublicCrmProxy_RefusalInteractionEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RefusalInteractionEmailResponse" message="tns:IPublicCrmProxy_RefusalInteractionEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhysicalContactList">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhysicalContactList" message="tns:IPublicCrmProxy_CreatePhysicalContactList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhysicalContactListResponse" message="tns:IPublicCrmProxy_CreatePhysicalContactList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterParticipantList">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipantList" message="tns:IPublicCrmProxy_RegisterParticipantList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterParticipantListResponse" message="tns:IPublicCrmProxy_RegisterParticipantList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePhoneContact">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhoneContact" message="tns:IPublicCrmProxy_CreatePhoneContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreatePhoneContactResponse" message="tns:IPublicCrmProxy_CreatePhoneContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFile" message="tns:IPublicCrmProxy_GetFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileResponse" message="tns:IPublicCrmProxy_GetFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileWithPostfix">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithPostfix" message="tns:IPublicCrmProxy_GetFileWithPostfix_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithPostfixResponse" message="tns:IPublicCrmProxy_GetFileWithPostfix_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileWithDate">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithDate" message="tns:IPublicCrmProxy_GetFileWithDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithDateResponse" message="tns:IPublicCrmProxy_GetFileWithDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileWithStartDate">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithStartDate" message="tns:IPublicCrmProxy_GetFileWithStartDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetFileWithStartDateResponse" message="tns:IPublicCrmProxy_GetFileWithStartDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceDocumentInText">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoiceDocumentInText" message="tns:IPublicCrmProxy_GetInvoiceDocumentInText_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoiceDocumentInTextResponse" message="tns:IPublicCrmProxy_GetInvoiceDocumentInText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoicePartnerDocumentInText">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoicePartnerDocumentInText" message="tns:IPublicCrmProxy_GetInvoicePartnerDocumentInText_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetInvoicePartnerDocumentInTextResponse" message="tns:IPublicCrmProxy_GetInvoicePartnerDocumentInText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintVerificationActInExcel">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPrintVerificationActInExcel" message="tns:IPublicCrmProxy_GetPrintVerificationActInExcel_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPrintVerificationActInExcelResponse" message="tns:IPublicCrmProxy_GetPrintVerificationActInExcel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintVerificationActInExcelInText">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPrintVerificationActInExcelInText" message="tns:IPublicCrmProxy_GetPrintVerificationActInExcelInText_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPrintVerificationActInExcelInTextResponse" message="tns:IPublicCrmProxy_GetPrintVerificationActInExcelInText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDmBillForHtml">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDmBillForHtml" message="tns:IPublicCrmProxy_GetDmBillForHtml_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetDmBillForHtmlResponse" message="tns:IPublicCrmProxy_GetDmBillForHtml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncident">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncident" message="tns:IPublicCrmProxy_GetIncident_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentResponse" message="tns:IPublicCrmProxy_GetIncident_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIncidentEx">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateIncidentEx" message="tns:IPublicCrmProxy_CreateIncidentEx_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateIncidentExResponse" message="tns:IPublicCrmProxy_CreateIncidentEx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncidentRating">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateIncidentRating" message="tns:IPublicCrmProxy_UpdateIncidentRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/UpdateIncidentRatingResponse" message="tns:IPublicCrmProxy_UpdateIncidentRating_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidationContactFace">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ValidationContactFace" message="tns:IPublicCrmProxy_ValidationContactFace_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/ValidationContactFaceResponse" message="tns:IPublicCrmProxy_ValidationContactFace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventsFromAptoID2">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/EventsFromAptoID2" message="tns:IPublicCrmProxy_EventsFromAptoID2_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/EventsFromAptoID2Response" message="tns:IPublicCrmProxy_EventsFromAptoID2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CouldUserAskQuestion">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CouldUserAskQuestion" message="tns:IPublicCrmProxy_CouldUserAskQuestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CouldUserAskQuestionResponse" message="tns:IPublicCrmProxy_CouldUserAskQuestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NotifyQuestionChange">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/NotifyQuestionChange" message="tns:IPublicCrmProxy_NotifyQuestionChange_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/NotifyQuestionChangeResponse" message="tns:IPublicCrmProxy_NotifyQuestionChange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CouldUserAskQuestion_wQuestionStatus">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CouldUserAskQuestion_wQuestionStatus" message="tns:IPublicCrmProxy_CouldUserAskQuestion_wQuestionStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CouldUserAskQuestion_wQuestionStatusResponse" message="tns:IPublicCrmProxy_CouldUserAskQuestion_wQuestionStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentExcellentComment">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentExcellentComment" message="tns:IPublicCrmProxy_GetIncidentExcellentComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetIncidentExcellentCommentResponse" message="tns:IPublicCrmProxy_GetIncidentExcellentComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomersStatusByInnKpp">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCustomersStatusByInnKpp" message="tns:IPublicCrmProxy_GetCustomersStatusByInnKpp_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetCustomersStatusByInnKppResponse" message="tns:IPublicCrmProxy_GetCustomersStatusByInnKpp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCustomer">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SearchCustomer" message="tns:IPublicCrmProxy_SearchCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SearchCustomerResponse" message="tns:IPublicCrmProxy_SearchCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveOrUpdateSupport">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SaveOrUpdateSupport" message="tns:IPublicCrmProxy_SaveOrUpdateSupport_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/SaveOrUpdateSupportResponse" message="tns:IPublicCrmProxy_SaveOrUpdateSupport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptionsData">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionsData" message="tns:IPublicCrmProxy_GetUserSubscriptionsData_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionsDataResponse" message="tns:IPublicCrmProxy_GetUserSubscriptionsData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptionStatusByBitrixId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionStatusByBitrixId" message="tns:IPublicCrmProxy_GetUserSubscriptionStatusByBitrixId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionStatusByBitrixIdResponse" message="tns:IPublicCrmProxy_GetUserSubscriptionStatusByBitrixId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptionProductLibraryByBitrixId">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionProductLibraryByBitrixId" message="tns:IPublicCrmProxy_GetUserSubscriptionProductLibraryByBitrixId_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetUserSubscriptionProductLibraryByBitrixIdResponse" message="tns:IPublicCrmProxy_GetUserSubscriptionProductLibraryByBitrixId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrmExport">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CrmExport" message="tns:IPublicCrmProxy_CrmExport_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CrmExportResponse" message="tns:IPublicCrmProxy_CrmExport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceListForPartners">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceListForPartners" message="tns:IPublicCrmProxy_GetPriceListForPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetPriceListForPartnersResponse" message="tns:IPublicCrmProxy_GetPriceListForPartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrmImportOrphanCarts">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CrmImportOrphanCarts" message="tns:IPublicCrmProxy_CrmImportOrphanCarts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CrmImportOrphanCartsResponse" message="tns:IPublicCrmProxy_CrmImportOrphanCarts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShopOffers">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetShopOffers" message="tns:IPublicCrmProxy_GetShopOffers_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/GetShopOffersResponse" message="tns:IPublicCrmProxy_GetShopOffers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEvent">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateEvent" message="tns:IPublicCrmProxy_CreateEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/CreateEventResponse" message="tns:IPublicCrmProxy_CreateEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterLicense">
+      <wsdl:input wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterLicense" message="tns:IPublicCrmProxy_RegisterLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://Norbit.Crm.Action.Proxy/IPublicCrmProxy/RegisterLicenseResponse" message="tns:IPublicCrmProxy_RegisterLicense_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

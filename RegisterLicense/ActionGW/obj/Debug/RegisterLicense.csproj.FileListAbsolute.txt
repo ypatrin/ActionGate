@@ -1,0 +1,12 @@
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\obj\Debug\RegisterLicense.csproj.ResolveComReference.cache
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\bin\Debug\RegisterLicense.exe.config
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\bin\Debug\RegisterLicense.exe
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\bin\Debug\RegisterLicense.pdb
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\bin\Debug\MySql.Data.dll
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\bin\Debug\MySql.Data.xml
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\obj\Debug\RegisterLicense.csprojResolveAssemblyReference.cache
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\obj\Debug\action_gw.Form1.resources
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\obj\Debug\action_gw.Properties.Resources.resources
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\obj\Debug\RegisterLicense.csproj.GenerateResource.Cache
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\obj\Debug\RegisterLicense.exe
+D:\Data\C#\Projects\Action Gate RegisterLicense\ActionGW\obj\Debug\RegisterLicense.pdb

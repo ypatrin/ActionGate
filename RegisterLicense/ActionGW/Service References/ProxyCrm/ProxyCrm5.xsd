@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.DataDefinition" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd2" namespace="http://Norbit.Crm.Action.DataDefinition" />
+  <xs:complexType name="UserData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Birthday" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BitrixId" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id2UserCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationSize" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RegionId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserData" nillable="true" type="tns:UserData" />
+  <xs:complexType name="FilterData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ItemsOnPage" type="xs:int" />
+      <xs:element minOccurs="0" name="PageNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilterData" nillable="true" type="tns:FilterData" />
+  <xs:complexType name="ArrayOfOrderData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderData" nillable="true" type="tns:OrderData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderData" nillable="true" type="tns:ArrayOfOrderData" />
+  <xs:complexType name="OrderData">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BillsIdentifiers" nillable="true" type="q1:ArrayOfguid" />
+      <xs:element minOccurs="0" name="CurrentPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepositPoints" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SumInText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SumP" type="xs:int" />
+      <xs:element minOccurs="0" name="SumR" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SumRInText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderData" nillable="true" type="tns:OrderData" />
+  <xs:complexType name="ArrayOfSeminarEventParticipantData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SeminarEventParticipantData" nillable="true" type="tns:SeminarEventParticipantData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSeminarEventParticipantData" nillable="true" type="tns:ArrayOfSeminarEventParticipantData" />
+  <xs:complexType name="SeminarEventParticipantData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BarCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventIdentity" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HadParticipated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParticipantId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowCreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RowId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SeminarEventParticipantData" nillable="true" type="tns:SeminarEventParticipantData" />
+  <xs:complexType name="ArrayOfSeminarEventData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SeminarEventData" nillable="true" type="tns:SeminarEventData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSeminarEventData" nillable="true" type="tns:ArrayOfSeminarEventData" />
+  <xs:complexType name="SeminarEventData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BranchId" type="ser:guid" />
+      <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CampaingId" type="ser:guid" />
+      <xs:element minOccurs="0" name="CityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EventId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PublisherGroupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SeminarEventData" nillable="true" type="tns:SeminarEventData" />
+  <xs:complexType name="ArrayOfPartnerData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PartnerData" nillable="true" type="tns:PartnerData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPartnerData" nillable="true" type="tns:ArrayOfPartnerData" />
+  <xs:complexType name="PartnerData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HeadPartnerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsE" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsGlavbuhReport" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsXcc" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PartnerId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PartnerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartnerPhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartnerShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartnerWebSite" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PartnerData" nillable="true" type="tns:PartnerData" />
+  <xs:complexType name="ArrayOfIncident">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Incident" nillable="true" type="tns:Incident" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIncident" nillable="true" type="tns:ArrayOfIncident" />
+  <xs:complexType name="Incident">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="DateCrate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateSolution" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Solution" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="State" type="q2:IncidentStageCode" />
+      <xs:element minOccurs="0" name="Status" type="xs:int" />
+      <xs:element xmlns:q3="http://Norbit.Crm.Action.DataDefinition" minOccurs="0" name="Type" nillable="true" type="q3:IncidentType" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Incident" nillable="true" type="tns:Incident" />
+  <xs:complexType name="ArrayOfOrderDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderDataEx" nillable="true" type="tns:OrderDataEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderDataEx" nillable="true" type="tns:ArrayOfOrderDataEx" />
+  <xs:complexType name="OrderDataEx">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OrderData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdvertBlock" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Contents" nillable="true" type="tns:ArrayOfOrderContentDataEx" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderDataEx" nillable="true" type="tns:OrderDataEx" />
+  <xs:complexType name="ArrayOfOrderContentDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderContentDataEx" nillable="true" type="tns:OrderContentDataEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderContentDataEx" nillable="true" type="tns:ArrayOfOrderContentDataEx" />
+  <xs:complexType name="OrderContentDataEx">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OrderContentData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BuyerName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderContentDataEx" nillable="true" type="tns:OrderContentDataEx" />
+  <xs:complexType name="OrderContentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ItemsCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProductExtName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Sum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SumInText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderContentData" nillable="true" type="tns:OrderContentData" />
+  <xs:complexType name="ArrayOfSendingInvoiceData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SendingInvoiceData" nillable="true" type="tns:SendingInvoiceData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSendingInvoiceData" nillable="true" type="tns:ArrayOfSendingInvoiceData" />
+  <xs:complexType name="SendingInvoiceData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SendingInvoiceData" nillable="true" type="tns:SendingInvoiceData" />
+  <xs:complexType name="ArrayOfOrderContentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderContentData" nillable="true" type="tns:OrderContentData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderContentData" nillable="true" type="tns:ArrayOfOrderContentData" />
+  <xs:complexType name="ArrayOfVerificationActData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VerificationActData" nillable="true" type="tns:VerificationActData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVerificationActData" nillable="true" type="tns:ArrayOfVerificationActData" />
+  <xs:complexType name="VerificationActData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrganizationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationValidationStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="VerificationActId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VerificationActData" nillable="true" type="tns:VerificationActData" />
+  <xs:complexType name="ArrayOfInvoiceData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoiceData" nillable="true" type="tns:InvoiceData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoiceData" nillable="true" type="tns:ArrayOfInvoiceData" />
+  <xs:complexType name="InvoiceData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" type="xs:int" />
+      <xs:element minOccurs="0" name="schet" nillable="true" type="tns:ArrayOfInvoiceDataEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceData" nillable="true" type="tns:InvoiceData" />
+  <xs:complexType name="ArrayOfInvoiceDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoiceDataEx" nillable="true" type="tns:InvoiceDataEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoiceDataEx" nillable="true" type="tns:ArrayOfInvoiceDataEx" />
+  <xs:complexType name="InvoiceDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="InvoiceId" type="ser:guid" />
+      <xs:element minOccurs="0" name="InvoiceNr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrintInvoiceDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceDataEx" nillable="true" type="tns:InvoiceDataEx" />
+  <xs:complexType name="ArrayOfUserPointsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserPointsData" nillable="true" type="tns:UserPointsData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserPointsData" nillable="true" type="tns:ArrayOfUserPointsData" />
+  <xs:complexType name="UserPointsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvailablePoints" type="xs:int" />
+      <xs:element minOccurs="0" name="LevelId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="TotalPoints" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserPointsData" nillable="true" type="tns:UserPointsData" />
+  <xs:complexType name="ArrayOfStateSendingContactData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StateSendingContactData" nillable="true" type="tns:StateSendingContactData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStateSendingContactData" nillable="true" type="tns:ArrayOfStateSendingContactData" />
+  <xs:complexType name="StateSendingContactData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActualDeliveryDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CommentInvoice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="InvoiceNr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlannedReleaseDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProductBaseNr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendingContentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendingContentNr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendingDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="States" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StateSendingContactData" nillable="true" type="tns:StateSendingContactData" />
+  <xs:complexType name="PrintDmBillToHtml">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DirectionEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DirectionStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ErrorText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorType" type="xs:int" />
+      <xs:element minOccurs="0" name="FileToBase64" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrintDmBillToHtml" nillable="true" type="tns:PrintDmBillToHtml" />
+  <xs:complexType name="ArrayOfIncidentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IncidentData" nillable="true" type="tns:IncidentData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIncidentData" nillable="true" type="tns:ArrayOfIncidentData" />
+  <xs:complexType name="IncidentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AuthorSolutions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommentRating" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedOn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CustomerIdName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateRating" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DeadlineDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IncidentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="IncidentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IncidentTypeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Solution" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SolutionDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TicketNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IncidentData" nillable="true" type="tns:IncidentData" />
+  <xs:complexType name="ArrayOfCrtIncidentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CrtIncidentData" nillable="true" type="tns:CrtIncidentData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCrtIncidentData" nillable="true" type="tns:ArrayOfCrtIncidentData" />
+  <xs:complexType name="CrtIncidentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IncidentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TicketNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CrtIncidentData" nillable="true" type="tns:CrtIncidentData" />
+  <xs:complexType name="ArrayOfValidationContactFaceData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ValidationContactFaceData" nillable="true" type="tns:ValidationContactFaceData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValidationContactFaceData" nillable="true" type="tns:ArrayOfValidationContactFaceData" />
+  <xs:complexType name="ValidationContactFaceData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationContactFaceData" nillable="true" type="tns:ValidationContactFaceData" />
+  <xs:complexType name="ArrayOfEventsFromAptoID2Data">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventsFromAptoID2Data" nillable="true" type="tns:EventsFromAptoID2Data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventsFromAptoID2Data" nillable="true" type="tns:ArrayOfEventsFromAptoID2Data" />
+  <xs:complexType name="EventsFromAptoID2Data">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BitrixId" type="xs:int" />
+      <xs:element minOccurs="0" name="DateParam1" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateParam2" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EventDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EventId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="TextParam1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextParam2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextParam3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextParam4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextParam5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextParam6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextParam7" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventsFromAptoID2Data" nillable="true" type="tns:EventsFromAptoID2Data" />
+  <xs:complexType name="QuestionData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnswerDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AnswerText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BitrixId" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExpertName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mark" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MarkComment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PressId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuestionText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Site" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusId" type="xs:int" />
+      <xs:element minOccurs="0" name="SubscriptionType" type="xs:int" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QuestionData" nillable="true" type="tns:QuestionData" />
+  <xs:complexType name="ArrayOfAskQuestionData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AskQuestionData" nillable="true" type="tns:AskQuestionData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAskQuestionData" nillable="true" type="tns:ArrayOfAskQuestionData" />
+  <xs:complexType name="AskQuestionData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AskQuestion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="QuestionsStatus" nillable="true" type="tns:ArrayOfQuestionStatusData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AskQuestionData" nillable="true" type="tns:AskQuestionData" />
+  <xs:complexType name="ArrayOfQuestionStatusData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="QuestionStatusData" nillable="true" type="tns:QuestionStatusData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQuestionStatusData" nillable="true" type="tns:ArrayOfQuestionStatusData" />
+  <xs:complexType name="QuestionStatusData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="QuestionId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuestionStatus" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QuestionStatusData" nillable="true" type="tns:QuestionStatusData" />
+  <xs:complexType name="ArrayOfIncidentExcellentCommentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IncidentExcellentCommentData" nillable="true" type="tns:IncidentExcellentCommentData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIncidentExcellentCommentData" nillable="true" type="tns:ArrayOfIncidentExcellentCommentData" />
+  <xs:complexType name="IncidentExcellentCommentData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CommentDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CommentText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TicketNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IncidentExcellentCommentData" nillable="true" type="tns:IncidentExcellentCommentData" />
+  <xs:complexType name="ArrayOfCheckCustomerData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CheckCustomerData" nillable="true" type="tns:CheckCustomerData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCheckCustomerData" nillable="true" type="tns:ArrayOfCheckCustomerData" />
+  <xs:complexType name="CheckCustomerData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomerState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+      <xs:element minOccurs="0" name="RegistrationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxIdNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CheckCustomerData" nillable="true" type="tns:CheckCustomerData" />
+  <xs:complexType name="ArrayOfMagazineSubscriptionsDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MagazineSubscriptionsDataEx" nillable="true" type="tns:MagazineSubscriptionsDataEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMagazineSubscriptionsDataEx" nillable="true" type="tns:ArrayOfMagazineSubscriptionsDataEx" />
+  <xs:complexType name="MagazineSubscriptionsDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Pin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MagazineSubscriptionsDataEx" nillable="true" type="tns:MagazineSubscriptionsDataEx" />
+  <xs:complexType name="SubscriptionProductLibraryData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BitrixId" type="xs:int" />
+      <xs:element minOccurs="0" name="HavingRecurentSubscription" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HavingSubscription" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubscriptionProductLibraryData" nillable="true" type="tns:SubscriptionProductLibraryData" />
+  <xs:complexType name="ArrayOfOrphanCartF">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrphanCartF" nillable="true" type="tns:OrphanCartF" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrphanCartF" nillable="true" type="tns:ArrayOfOrphanCartF" />
+  <xs:complexType name="OrphanCartF">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BitrixId" type="xs:int" />
+      <xs:element minOccurs="0" name="CreatedOn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CrmNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateEnd" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateStart" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfferName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfferTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Period" type="xs:int" />
+      <xs:element minOccurs="0" name="PictureUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PriceLevelId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ShopName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrphanCartF" nillable="true" type="tns:OrphanCartF" />
+</xs:schema>

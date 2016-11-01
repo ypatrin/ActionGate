@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Norbit.Crm.Action.IdServices.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Invoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccumBonus" type="xs:int" />
+      <xs:element minOccurs="0" name="AktionBonusSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Banner" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BasicDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BasicPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BillDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BillId" type="ser:guid" />
+      <xs:element minOccurs="0" name="BillNr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BillSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Boss" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Client" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientAddressString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientFax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClubDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ClubName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactFace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactNames" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrentBonus" type="xs:int" />
+      <xs:element minOccurs="0" name="DiscountSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FilialPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GlavBuh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Manager" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nds10" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Nds18" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Positions" nillable="true" type="tns:ArrayOfInvoicePosition" />
+      <xs:element minOccurs="0" name="PriceLevelAdvertising" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SalesOrderId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SellerBank" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerBik" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerCorrAccount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerInn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerKpp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerLegalAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerMainAccount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerOkonh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerOkpo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SystemUserEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SystemUserFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SystemUserPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalSum" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Invoice" nillable="true" type="tns:Invoice" />
+  <xs:complexType name="ArrayOfInvoicePosition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoicePosition" nillable="true" type="tns:InvoicePosition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoicePosition" nillable="true" type="tns:ArrayOfInvoicePosition" />
+  <xs:complexType name="InvoicePosition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AktionBonusSum" type="xs:double" />
+      <xs:element minOccurs="0" name="Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="Lot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Sum" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoicePosition" nillable="true" type="tns:InvoicePosition" />
+  <xs:complexType name="ArrayOfCashFlowInOrders">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CashFlowInOrders" nillable="true" type="tns:CashFlowInOrders" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCashFlowInOrders" nillable="true" type="tns:ArrayOfCashFlowInOrders" />
+  <xs:complexType name="CashFlowInOrders">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PaymentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PaymentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentSum" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SalesOrderId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CashFlowInOrders" nillable="true" type="tns:CashFlowInOrders" />
+  <xs:complexType name="RegisterLicenseDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountInn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountKpp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountPin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AuthCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactPhoneCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactPin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateСonnectionNow" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicenseCountBySalesContactByProduct" type="xs:int" />
+      <xs:element minOccurs="0" name="LicenseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PartnerNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PriceListNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegCodeUkr" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SellerLogin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceActivateOn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ServiceExpiresOn" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisterLicenseDto" nillable="true" type="tns:RegisterLicenseDto" />
+</xs:schema>

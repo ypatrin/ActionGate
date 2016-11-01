@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b88a6b5f-1f1b-4a41-960b-8e62d4e0321f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://83.69.214.126:5559/ProxyCrm.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProxyCrm.xsd" MetadataType="Schema" ID="af81120e-b894-46f5-92ca-2592f5cc168a" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd8" />
+    <MetadataFile FileName="ProxyCrm1.xsd" MetadataType="Schema" ID="b9554c83-5400-449d-99c4-2ad3a3a29f36" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProxyCrm.disco" MetadataType="Disco" ID="3d229bb6-ffcb-40bf-9dc4-fd7ee8a46628" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?disco" />
+    <MetadataFile FileName="ProxyCrm2.xsd" MetadataType="Schema" ID="75d1209b-e7aa-4075-a64e-059865ebd842" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProxyCrm.wsdl" MetadataType="Wsdl" ID="63c0a32b-1b99-44c7-b3b4-d349d35ddafe" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?wsdl" />
+    <MetadataFile FileName="ProxyCrm3.xsd" MetadataType="Schema" ID="164d2419-45a2-4b47-b373-6ad0babcc80e" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProxyCrm4.xsd" MetadataType="Schema" ID="a41dfe01-d4ec-4f3b-9023-268af92c5827" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd7" />
+    <MetadataFile FileName="ProxyCrm5.xsd" MetadataType="Schema" ID="a102daeb-3261-4528-a782-677aea953ecc" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd3" />
+    <MetadataFile FileName="ProxyCrm6.xsd" MetadataType="Schema" ID="b3273ae7-23cb-4aa6-aa41-1d226ca52813" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd5" />
+    <MetadataFile FileName="ProxyCrm7.xsd" MetadataType="Schema" ID="cdc56585-4bf2-4ed6-b59b-c199682330e6" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd6" />
+    <MetadataFile FileName="ProxyCrm1.wsdl" MetadataType="Wsdl" ID="4f874f9e-a085-411a-941f-ebed4af6e90f" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ProxyCrm8.xsd" MetadataType="Schema" ID="67cc2bf0-95b1-4c12-bcda-ba80943b1353" SourceId="1" SourceUrl="http://83.69.214.126:5559/ProxyCrm.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

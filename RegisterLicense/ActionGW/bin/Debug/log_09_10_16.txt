@@ -1,0 +1,16 @@
+
+[09.10.2016 22:28:37] RegisterLicense Service: Запуск http сервера
+[09.10.2016 22:28:37] RegisterLicense Service: Сервер успешно запущен и доступен по адресу http://localhost:8181/
+[09.10.2016 22:29:02] RegisterLicense Service: Остановка сервера
+[09.10.2016 22:29:02] RegisterLicense Service: Сервер успешно остановлен
+[09.10.2016 22:29:35] RegisterLicense Service: Запуск http сервера
+[09.10.2016 22:29:35] RegisterLicense Service: Сервер успешно запущен и доступен по адресу http://localhost:8182/
+[09.10.2016 22:29:37] RegisterLicense Service: Получен http запрос метода RegisterLicense.xml
+[09.10.2016 22:29:37] RegisterLicense Service: Отправка запроса
+[09.10.2016 22:29:59] RegisterLicense Service: Отдаем данные клиенту
+[09.10.2016 22:30:00] RegisterLicense Service: Получен http запрос метода favicon.ico
+[09.10.2016 22:30:00] RegisterLicense Service: Отдаем данные клиенту
+[09.10.2016 22:30:00] RegisterLicense Service: Получен http запрос метода favicon.ico
+[09.10.2016 22:30:00] RegisterLicense Service: Отдаем данные клиенту
+[09.10.2016 22:30:25] RegisterLicense Service: Остановка сервера
+[09.10.2016 22:30:25] RegisterLicense Service: Сервер успешно остановлен
