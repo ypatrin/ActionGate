@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
 using action_gw.PhoneCalls;
+using System.Windows.Forms;
 
 namespace action_gw
 {
@@ -21,10 +22,10 @@ namespace action_gw
                 Properties.Settings.Default.MysqlPass);
             try
             {
-                Log.add("Подключаемся к БД...");   
+                //Log.add("Подключаемся к БД...");   
                 MySQL = new MySqlConnection(ConnectionString);
                 MySQL.Open();
-                Log.add("Подключились к БД успешно.");
+                //Log.add("Подключились к БД успешно.");
 
                 return true;
             }
@@ -152,8 +153,8 @@ namespace action_gw
                     if (!String.IsNullOrEmpty(MyDataReader.GetString("BitrixId").ToString()))
                         phone_call.BitrixId = MyDataReader.GetString("BitrixId");
 
-                    if (!String.IsNullOrEmpty(MyDataReader.GetString("ScheduledStart").ToString()))
-                        phone_call.ScheduledStart = MyDataReader.GetDateTime("ScheduledStart");
+                    if (!String.IsNullOrEmpty(MyDataReader.GetString("ScheduledStart").ToString().Trim()))
+                        phone_call.ScheduledStart = DateTime.Parse(MyDataReader.GetString("ScheduledStart"));
 
                     if (!String.IsNullOrEmpty(MyDataReader.GetString("Overview").ToString()))
                         phone_call.Overview = MyDataReader.GetString("Overview");
@@ -182,7 +183,10 @@ namespace action_gw
                         phone_call.TimeDifference = MyDataReader.GetInt16("TimeDifference");
 
                     PhoneCalls.Add(phone_call);
-                } catch(Exception e) { }
+                } catch(Exception e)
+                {
+                    
+                }
 
                 count++;
             }

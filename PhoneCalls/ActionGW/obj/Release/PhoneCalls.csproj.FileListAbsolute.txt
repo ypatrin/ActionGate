@@ -9,3 +9,14 @@ D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Release\PhoneCalls.cspro
 D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Release\action_gw.Form1.resources
 D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Release\action_gw.Properties.Resources.resources
 D:\Data\C#\Projects\Action Gate PhoneCalls\ActionGW\obj\Release\PhoneCalls.csproj.GenerateResource.Cache
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\bin\Release\PhoneCalls.exe.config
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\obj\Release\PhoneCalls.csproj.ResolveComReference.cache
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\obj\Release\PhoneCalls.exe
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\obj\Release\PhoneCalls.pdb
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\bin\Release\PhoneCalls.exe
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\bin\Release\PhoneCalls.pdb
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\bin\Release\MySql.Data.dll
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\obj\Release\PhoneCalls.csprojResolveAssemblyReference.cache
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\obj\Release\action_gw.Form1.resources
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\obj\Release\action_gw.Properties.Resources.resources
+D:\Data\C#\Projects\ActionGate\PhoneCalls\ActionGW\obj\Release\PhoneCalls.csproj.GenerateResource.Cache

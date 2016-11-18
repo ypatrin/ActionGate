@@ -26,13 +26,27 @@ namespace action_gw
         {
             try
             {
-                string fileName = String.Format("log_{0:dd_MM_yy}.txt", DateTime.Now);
+                string fileName = String.Format("logs\\log_{0:dd_MM_yy}.txt", DateTime.Now);
                 string fileText = "";
 
                 if (File.Exists(fileName)) fileText = System.IO.File.ReadAllText(fileName);
 
                 System.IO.StreamWriter file = new System.IO.StreamWriter(fileName);
                 file.Write(fileText + Environment.NewLine + "[" + DateTime.Now + "] PhoneCalls Service: " + text);
+                file.Close();
+            }
+            catch (Exception er)
+            {
+            }
+        }
+
+        public void add(string text, string fileName)
+        {
+            try
+            {
+                fileName = @"logs\" + fileName;
+                System.IO.StreamWriter file = new System.IO.StreamWriter(fileName);
+                file.Write(text);
                 file.Close();
             }
             catch (Exception er)

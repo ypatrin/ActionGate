@@ -1,0 +1,4 @@
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\bin\Debug\SendMail.exe
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\bin\Debug\SendMail.pdb
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\obj\Debug\SendMail.exe
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\obj\Debug\SendMail.pdb

@@ -1,0 +1,25 @@
+
+[18.11.2016 12:16:10] PhoneCalls Service: Загрузка конфигурации сервиса
+[18.11.2016 12:16:10] PhoneCalls Service: Проверяем подключение к БД
+[18.11.2016 12:16:12] PhoneCalls Service: Ошибка подключения к БД: Unable to connect to any of the specified MySQL hosts.
+[18.11.2016 12:16:12] PhoneCalls Service: Неудается запустить сервер из-за ошибки БД
+[18.11.2016 12:16:36] PhoneCalls Service: Загрузка конфигурации сервиса
+[18.11.2016 12:16:36] PhoneCalls Service: Проверяем подключение к БД
+[18.11.2016 12:16:37] PhoneCalls Service: Сервер успешно запущен и доступен по адресу http://localhost:8181/
+[18.11.2016 12:16:40] PhoneCalls Service: Начинаем обновление звонков
+[18.11.2016 12:19:48] PhoneCalls Service: Звонки обновлены
+[18.11.2016 12:20:14] PhoneCalls Service: Получен http запрос метода getPhoneCalls.xls
+[18.11.2016 12:23:34] PhoneCalls Service: Загрузка конфигурации сервиса
+[18.11.2016 12:23:34] PhoneCalls Service: Проверяем подключение к БД
+[18.11.2016 12:23:36] PhoneCalls Service: Сервер успешно запущен и доступен по адресу http://localhost:8181/
+[18.11.2016 12:23:39] PhoneCalls Service: Получен http запрос метода getPhoneCalls.xls
+[18.11.2016 12:24:56] PhoneCalls Service: Загрузка конфигурации сервиса
+[18.11.2016 12:24:56] PhoneCalls Service: Проверяем подключение к БД
+[18.11.2016 12:24:57] PhoneCalls Service: Сервер успешно запущен и доступен по адресу http://localhost:8181/
+[18.11.2016 12:25:00] PhoneCalls Service: Получен http запрос метода getPhoneCalls.xls
+[18.11.2016 12:26:00] PhoneCalls Service: Загрузка конфигурации сервиса
+[18.11.2016 12:26:00] PhoneCalls Service: Проверяем подключение к БД
+[18.11.2016 12:26:01] PhoneCalls Service: Сервер успешно запущен и доступен по адресу http://localhost:8181/
+[18.11.2016 12:26:04] PhoneCalls Service: Получен http запрос метода getPhoneCalls.xls
+[18.11.2016 12:26:07] PhoneCalls Service: Формируем xls файл GetPhoneCalls
+[18.11.2016 12:33:04] PhoneCalls Service: Отдаем данные клиенту

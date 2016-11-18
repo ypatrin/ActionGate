@@ -1,0 +1,5 @@
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\bin\Release\SendMail.exe
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\bin\Release\SendMail.pdb
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\obj\Release\SendMail.exe
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\obj\Release\SendMail.pdb
+D:\Data\C#\Projects\ActionGate\PhoneCalls\SendMail\obj\Release\SendMail.csprojResolveAssemblyReference.cache

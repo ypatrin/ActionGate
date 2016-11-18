@@ -26,7 +26,7 @@ namespace action_gw
         {
             try
             {
-                string fileName = String.Format("log_{0:dd_MM_yy}.txt", DateTime.Now);
+                string fileName = String.Format("logs\\log_{0:dd_MM_yy}.txt", DateTime.Now);
                 string fileText = "";
 
                 if (File.Exists(fileName)) fileText = System.IO.File.ReadAllText(fileName);
@@ -42,7 +42,7 @@ namespace action_gw
 
         public string getLog()
         {
-            string fileName = String.Format("log_{0:dd_MM_yy}.txt", DateTime.Now);
+            string fileName = String.Format("logs\\log_{0:dd_MM_yy}.txt", DateTime.Now);
 
             try
             {

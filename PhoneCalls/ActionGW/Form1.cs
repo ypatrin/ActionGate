@@ -176,8 +176,19 @@ namespace action_gw
             Action Action = new Action();
             GetPhoneCallsData[] phoneCalls = Action.getPhoneCalls();
 
-            DB.updatePhoneCalls(phoneCalls);
-            writeLog("Звонки обновлены");
+            if (phoneCalls != null)
+            {
+                DB.updatePhoneCalls(phoneCalls);
+                writeLog("Звонки обновлены");
+            }
+            else
+            {
+                writeLog("Звонки не обновлены");
+            }
+
+            //write count calls
+            int countCalls = phoneCalls.Length;
+            Log.add(String.Format("{0}", countCalls), String.Format("calls\\{0:dd.MM.yy}.log", DateTime.Now));
         }
 
         private void button1_Click(object sender, EventArgs e)
